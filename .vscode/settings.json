@@ -1,5 +1,6 @@
 {
-    "livePreview.portNumber": 3005,
-    "livePreview.hostIP": "127.0.0.2",
-    "livePreview.openPreviewTarget": "External Browser"
+  "livePreview.portNumber": 3005,
+  "livePreview.hostIP": "127.0.0.2",
+  "livePreview.openPreviewTarget": "External Browser",
+  "livePreview.defaultPreviewPath": "/index.html"
 }

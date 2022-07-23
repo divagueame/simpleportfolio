@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Martin Arce - Web Developer</title>
-    <script src="simpleLightbox.js"></script>
+    <script src="simpleLightbox.js" defer></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="simpleLightbox.css" />
   </head>
   <body>
     <header>
       <h1>Martin Arce</h1>
       <h6>Web Developer</h6>
+
       <img
         src="martin_arce_profile_pic.jpg"
         alt="Martin Arce Profile Picture"
@@ -35,20 +38,35 @@
       <h3>Projects</h3>
       <hr />
       <!-- Team Task -->
-      <div>
-        <h6>-TeamTask</h6>
-
+      <div class="project">
+        <h6>TeamTask</h6>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          quaerat omnis libero quisquam atque cumque nemo pariatur magnam
-          eveniet, incidunt, non voluptatem.
+          TeamTask is an application where teams can track their goals. I built
+          following a great course by
+          <a href="https://www.hotrails.dev/turbo-rails">HotRails</a>. I
+          extended it by adding a login system with roles assigned to several
+          teams.
         </p>
         <ul>
-          <li>as</li>
-          <li>sdfd</li>
+          <span>Built with:</span>
+          <li>Ruby on Rails</li>
+          <li>PostgreSQL</li>
+          <li>Redis</li>
+        </ul>
+        <ul>
+          <span>Main features:</span>
+          <li></li>
+          <li>Live refresh of updates to all connected users</li>
           <li>sdfd</li>
         </ul>
         <div class="links">
+          <a class="img-link" href="#" id="teamtasktrigger"
+            ><img
+              class="logo-img"
+              src="img/img.svg"
+              alt="Pictures of"
+            />Screenshots</a
+          >
           <a class="img-link" href="https://teamtask.herokuapp.com/">
             <img class="logo-img" src="img/launch.svg" alt="Github Logo" />Live
             Version</a
@@ -60,17 +78,9 @@
               alt="Github Logo"
             />Source Code</a
           >
-          <a class="img-link" href="#"
-            ><img
-              class="logo-img"
-              src="img/img.svg"
-              alt="Pictures of"
-            />Screenshots</a
-          >
         </div>
       </div>
 
-      <br />
       <p>
         If you would like to see some older projects, have a look at
         <a href="http://www.martin-arce.de/">my previous portfolio</a>.
