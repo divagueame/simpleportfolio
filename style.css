@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Crimson+Text&family=Frank+Ruhl+Libre&family=Kaisei+Opti&family=Zilla+Slab&display=swap');
+* {
+  margin: 0;
+  padding: 0rem; 
+  /* font-family: 'Zilla Slab', serif; */
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* font-family: 'Kaisei Opti', serif; */
+  /* font-family: 'Frank Ruhl Libre', serif; */
+  font-family: 'Crimson Text', serif;
+
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Times New Roman", serif;
+  font-weight: 300;
+  color: rgb(46, 46, 46);
+  color: rgb(36, 36, 36);
+  color: rgb(40, 40, 40);
+  /* background-color: rgb(255, 255, 255); */
+}
+body {
+  /* padding: clamp(10px, 5vw, 10px) 0; */
+}
+h1 {
+  font-size: clamp(2.72rem, calc(2.75rem + 2.56vw), 4.58rem);
+}
+h2{
+  font-size: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+}h3 {
+  font-size: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+
+}
+h4 {
+  font-size: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+}
+h5 {
+  font-size: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem); 
+}
+h6 {
+  font-size: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem);
+    /* font-size: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem); */
+  /* text-decoration: underline; */
+}
+
+p, a, ul {
+  margin-bottom: 10px;
+  font-size:clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem);
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  padding-top: clamp(20px, 20vw, 60px);
+  padding-bottom: clamp(20px, 20vw, 60px);
+  text-align: center;
+    overflow: hidden;
+}
+header h1 {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header h1::before,
+header h1::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(46, 46, 46);
+  left: -30px;
+  top: 50%;
+  width: 12px;
+  height: 1px;
+}
+header h1::after {
+  right: -30px;
+  left: unset;
+}
+hr {
+    border: none;
+    border-top: 1px solid rgb(46, 46, 46);
+    min-height: 1px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+section {
+  margin: 0px auto;
+  /* outline: 2px green solid; */
+  margin-bottom: clamp(20px, 40vw, 100px);
+  /* width: 100%; */
+  max-width: 650px;
+  padding: 0 5vw;
+}
+ul { 
+  margin-left: 20px
+}
+header img {
+  max-width: clamp(10px, 60vw, 250px);
+  margin: 0 auto;
+  display: block;
+  aspect-ratio: 1 / 1;
+  display: none;
+}
+
+ 
+a.img-link {
+  display: flex;
+  align-items: center;
+  gap: 5px
+}
+
+.contact a > * {
+  flex-basis: 0%;
+}
+
+.logo-img {
+  height: auto;
+  width: 18px;
+  aspect-ratio: 1 / 1;
+}
+
+/* Projects */
+section.projects .links {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 10px */
+}
+section.projects .links a{
+  flex-basis: 0;
+}
+section.projects .links a:hover img {
+  transform: translateY(-2px);
+}
