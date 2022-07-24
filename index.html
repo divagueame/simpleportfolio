@@ -11,38 +11,112 @@
     <link rel="stylesheet" href="simpleLightbox.css" />
   </head>
   <body>
+    <div class="languages">
+      <a href="#">EN</a><a href="#">ES</a><a href="#">DE</a>
+    </div>
     <header>
       <h1>Martin Arce</h1>
-      <h6>Web Developer</h6>
+      <h3>Web Developer</h3>
 
       <img
+        class="profilepic"
         src="martin_arce_profile_pic.jpg"
         alt="Martin Arce Profile Picture"
       />
     </header>
 
     <!-- Work -->
-    <section>
-      <h3>Work</h3>
+    <section class="work">
+      <h2>Work</h2>
       <hr />
+      <div class="job-header">
+        <h3>Web Developer</h3>
+        <h3><i>Dec. 2021 - Present</i></h3>
+      </div>
+      <h3 class="light">Harder-Online GmbH</h3>
+      <br />
+
+      <p>
+        Developed and maintained the e-commerce websites. My activity focused
+        mainly on <a href="https://www.labelprint24.com/">LabelPrint24</a> and
+        <a href="https://www.packaging-warehouse.com/">Packaging Warehouse</a>.
+      </p>
+
       <ul>
-        <li>sdf</li>
-        <li>sdfd</li>
-        <li>sdfd</li>
+        <li>
+          Worked tightly both with the IT and the marketing teams to define new
+          strategies to expand business
+        </li>
+        <li>
+          Improved features and updated existing one of internal CMS, such as
+          small widgets and full page layouts
+        </li>
+        <li>Documentated new features and previous bugs</li>
       </ul>
       <p>I'm</p>
     </section>
 
     <!-- Projects -->
     <section class="projects">
-      <h3>Projects</h3>
+      <h2>Projects</h2>
       <hr />
+
+      <!-- TurboNews -->
+      <div class="project">
+        <h3>TurboNews</h3>
+        <p>
+          TurboNews is an extended and advanced version of one of
+          <a id="misnotispreview" href="https://misnotis.herokuapp.com/"
+            >my first Rails apps</a
+          >: a basic web scraper which crawls the newspapers. It automatically
+          gathers the headlines every 6 hours and lists the links to the user
+          with the articles of the day. TurboNews works as an automated tool to
+          search, index and organize different articles and topics. I keep
+          developing and improving it on a regular basis.
+        </p>
+        <ul>
+          <span>Built with:</span>
+          <li>Ruby on Rails</li>
+          <li>PostgreSQL</li>
+          <li>Tailwind CSS</li>
+        </ul>
+        <ul>
+          <span>Relevant features:</span>
+          <li>Live Search updates for articles</li>
+          <li>Administration Panel</li>
+          <li>
+            Automatized assignation of category tags to each article based on
+            word frecuency
+          </li>
+        </ul>
+        <div class="links">
+          <a class="img-link" href="#" id="turbonewstrigger"
+            ><img
+              class="logo-img"
+              src="img/img.svg"
+              alt="Pictures of"
+            />Screenshots</a
+          >
+          <a class="img-link" href="https://turbonews.herokuapp.com/">
+            <img class="logo-img" src="img/launch.svg" alt="Github Logo" />Live
+            Version</a
+          >
+          <a class="img-link" href="https://github.com/divagueame/turbonews">
+            <img
+              class="logo-img"
+              src="img/github1.svg"
+              alt="Github Logo"
+            />Source Code</a
+          >
+        </div>
+      </div>
+
       <!-- Team Task -->
       <div class="project">
-        <h6>TeamTask</h6>
+        <h3>TeamTask</h3>
         <p>
           TeamTask is an application where teams can track their goals. I built
-          following a great course by
+          it following a great course by
           <a href="https://www.hotrails.dev/turbo-rails">HotRails</a>. I
           extended it by adding a login system with roles assigned to several
           teams.
@@ -54,10 +128,10 @@
           <li>Redis</li>
         </ul>
         <ul>
-          <span>Main features:</span>
-          <li></li>
+          <span>Relevant features:</span>
+          <li>Role-Based Authentication system</li>
+          <li>Inline editing of database data</li>
           <li>Live refresh of updates to all connected users</li>
-          <li>sdfd</li>
         </ul>
         <div class="links">
           <a class="img-link" href="#" id="teamtasktrigger"
@@ -81,31 +155,52 @@
         </div>
       </div>
 
+      <!-- TurboNews -->
+      <!-- Mis Notis -->
+      <!-- Sellit -->
+
+      <!-- Music App -->
+      <!-- https://music-theta.vercel.app/ -->
+
       <p>
-        If you would like to see some older projects, have a look at
+        If you would like to see some older projects, such as a
+        <a href="https://divagueame.github.io/raro/"
+          >React app to learn Spanish</a
+        >
+        or a <a href="https://divagueame.github.io/dice/">CSS Rolling Dice</a>,
+        have a look at
         <a href="http://www.martin-arce.de/">my previous portfolio</a>.
       </p>
     </section>
 
     <section>
-      <h3>About me</h3>
+      <h2>About me</h2>
       <hr />
+
+      <img
+        class="profilepic"
+        src="martin_arce_profile_pic.jpg"
+        alt="Martin Arce Profile Picture"
+      />
       <p>
-        I'm from Spain but I have lived in Germany, China, Switzerland, Ukraine,
-        France and England.
+        I hold a degree on English studies and two different Masters on Language
+        Learning. I used to be a language teacher and I started programming to
+        create games for my clases but ended up changing my career path. I am a
+        creative and passionate person who likes to bite what life throws at me.
       </p>
       <p>
-        I used to be a language teacher. I started programming to create games
-        for my clases but ended up changing my career path. I am a creative and
-        passionate person who likes to bite what life throws at me.
+        I'm currently living between Dresden (Germany) and Pontevedra (Spain)
+        but I have lived in China, Switzerland, Ukraine, France and England and
+        traveled some others. Therefore, I am very aware of the importance and
+        value of inter-cultural awareness.
       </p>
     </section>
     <section class="contact">
-      <h3>Contact</h3>
+      <h2>Contact</h2>
       <hr />
       <p>
-        If my profile sounds like a good fit for your team, it'd great to hear
-        from you:
+        Does Is my profile sound like a good fit for your team? It'd great to
+        hear from you:
       </p>
       <a href="https://github.com/divagueame" class="img-link">
         <img class="logo-img" src="img/mail.svg" alt="Github Logo" />
