@@ -3,7 +3,7 @@ const teamTaskImagesTrigger = document.querySelector('#teamtasktrigger');
 teamTaskImagesTrigger.addEventListener('click', (e) => {
     e.preventDefault()
     SimpleLightbox.open({
-        items: ['img/projects/teamtask/1.gif', 'img/projects/teamtask/2.png', 'img/projects/teamtask/3.png']
+        items: [ 'img/projects/teamtask/2.png', 'img/projects/teamtask/3.png']
     });
     
 })
@@ -11,14 +11,13 @@ teamTaskImagesTrigger.addEventListener('click', (e) => {
 
 
 
-// HoverGallery
-// TeamTask Gallery
-const misnotispreview = document.querySelector('#misnotispreview');
-misnotispreview.addEventListener('mouseover', (e) => {
-  console.log('chick')
-    e.preventDefault()
-    SimpleLightbox.open({
-        items: ['img/projects/teamtask/1.gif', 'img/projects/teamtask/2.png', 'img/projects/teamtask/3.png']
+// MisNotisPreview 
+const misnotispreviewtrigger = document.querySelector('#misnotispreviewtrigger');
+misnotispreviewtrigger.addEventListener('click', (e) => {
+  e.preventDefault()
+  const misnotispreviewimg = document.querySelector('#misnotispreviewimg');
+     SimpleLightbox.open({
+       items: ['img/projects/teamtask/2.png']
     });
     
 })

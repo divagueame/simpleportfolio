@@ -132,6 +132,9 @@ a.img-link {
   flex-basis: 0%;
 }
 
+.logo-img:hover {
+  cursor: pointer 
+}
 .logo-img {
   height: auto;
   width: 18px;
@@ -170,8 +173,7 @@ section.projects .links a:hover {
   color: rgb(0, 0, 0)
 }
 
-
-
+ 
 .languages {
   display: flex;
   position: absolute;
