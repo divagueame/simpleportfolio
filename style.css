@@ -114,7 +114,7 @@ ul span {
   margin: 0 auto;
   display: block;
   aspect-ratio: 1 / 1;
-  display: none;
+  /* display: none; */
 }
 section.work h3,
 section.projects h3 {
