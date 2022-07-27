@@ -111,6 +111,7 @@ ul span {
 }
 .profilepic {
   max-width: clamp(10px, 60vw, 250px);
+  width: 60vw;
   margin: 0 auto;
   display: block;
   aspect-ratio: 1 / 1;
