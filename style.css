@@ -52,17 +52,60 @@ p, a, ul {
 a {
   font-weight: bold;
   text-decoration: none;
+  position: relative;
 }
 
-a:hover {
-  text-decoration: underline;
+.fire-link:before,
+.fire-link:after {
+  content: '';
+  width: 0%;
+  transition: 160ms ease all;
+  transition-delay: 100ms;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2px;
+  border-radius: 100px;
+  background: #f12711;
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  background: linear-gradient(to right, #f5af19, #f12711);
+}
+.fire-link:before {
+  width: 100%;
+  background:rgb(36, 36, 36);
+}
+.fire-link:hover:after {
+  width: 100%;
+}
+
+.languages a {
+  font-weight: lighter;
+}
+.languages a.fire-link:before,
+.languages a.fire-link:after {
+  bottom: 3px;
+  background:rgb(36, 36, 36);
+  height: 1px;
+}
+.languages a:hover.fire-link:before,
+.languages a:hover.fire-link:after {
+  height: 1px;
+  background:rgb(36, 36, 36);
+
+}
+.languages a.active.fire-link:before {
+  width: 100%;
+}
+.languages .fire-link:before {
+  width: 0;
 }
 
 header {
   padding-top: clamp(20px, 20vw, 60px);
   padding-bottom: clamp(20px, 20vw, 60px);
   text-align: center;
-    overflow: hidden;
+  overflow: hidden;
 }
 header h1 {
   position: relative;
@@ -192,8 +235,8 @@ section.projects .links a:hover {
 .languages {
   display: flex;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   gap: 10px;
   font-weight: normal;
 }
