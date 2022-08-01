@@ -11,22 +11,30 @@ teamTaskImagesTrigger.addEventListener('click', (e) => {
 
 
 
-// MisNotisPreview 
-const misnotispreviewtrigger = document.querySelector('#misnotispreviewtrigger');
-misnotispreviewtrigger.addEventListener('click', (e) => {
-  e.preventDefault()
-  const misnotispreviewimg = document.querySelector('#misnotispreviewimg');
-     SimpleLightbox.open({
-       items: ['img/projects/teamtask/2.png']
+// // MisNotisPreview 
+// const misnotispreviewtrigger = document.querySelector('#misnotispreviewtrigger');
+// misnotispreviewtrigger.addEventListener('click', (e) => {
+//   e.preventDefault()
+//   const misnotispreviewimg = document.querySelector('#misnotispreviewimg');
+//      SimpleLightbox.open({
+//        items: ['img/projects/teamtask/2.png']
+//     });
+    
+// })
+
+
+// TeamTask Gallery
+const mycatisthebestpreviewtrigger = document.querySelector('#mycatisthebesttrigger');
+mycatisthebestpreviewtrigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    SimpleLightbox.open({
+        items: [ 'img/projects/mycatisthebest/1.gif', 'img/projects/mycatisthebest/2.jpg', 'img/projects/mycatisthebest/3.jpg']
     });
     
 })
 
 
-
-
-
-
+ 
 
 
 
