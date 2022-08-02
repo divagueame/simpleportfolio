@@ -1,36 +1,41 @@
+// TurboNews Gallery
+const turbonewsImagesTrigger = document.querySelector('#turbonewstrigger');
+turbonewsImagesTrigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    SimpleLightbox.open({
+        items: [
+            'img/projects/turbonews/1.jpg',
+            'img/projects/turbonews/1.gif',
+            'img/projects/turbonews/2.jpg',
+            'img/projects/turbonews/2.gif',
+            'img/projects/turbonews/3.jpg',
+            'img/projects/turbonews/3.gif']
+    });    
+})
+
 // TeamTask Gallery
 const teamTaskImagesTrigger = document.querySelector('#teamtasktrigger');
 teamTaskImagesTrigger.addEventListener('click', (e) => {
     e.preventDefault()
     SimpleLightbox.open({
-        items: [ 'img/projects/teamtask/2.png', 'img/projects/teamtask/3.png']
-    });
-    
+        items: [
+            'img/projects/teamtask/1.gif',
+            'img/projects/teamtask/2.jpg',
+            'img/projects/teamtask/3.jpg']
+    });    
 })
 
 
-
-
-// // MisNotisPreview 
-// const misnotispreviewtrigger = document.querySelector('#misnotispreviewtrigger');
-// misnotispreviewtrigger.addEventListener('click', (e) => {
-//   e.preventDefault()
-//   const misnotispreviewimg = document.querySelector('#misnotispreviewimg');
-//      SimpleLightbox.open({
-//        items: ['img/projects/teamtask/2.png']
-//     });
-    
-// })
-
-
-// TeamTask Gallery
+// My cat is the best Gallery
 const mycatisthebestpreviewtrigger = document.querySelector('#mycatisthebesttrigger');
 mycatisthebestpreviewtrigger.addEventListener('click', (e) => {
     e.preventDefault()
     SimpleLightbox.open({
-        items: [ 'img/projects/mycatisthebest/1.gif', 'img/projects/mycatisthebest/2.jpg', 'img/projects/mycatisthebest/3.jpg']
+        items: [
+            'img/projects/mycatisthebest/1.gif',
+            'img/projects/mycatisthebest/2.jpg',
+            'img/projects/mycatisthebest/3.jpg']
     });
-    
 })
 
 
