@@ -4,6 +4,7 @@ turbonewsImagesTrigger.addEventListener('click', (e) => {
     e.preventDefault()
     SimpleLightbox.open({
         items: [
+            'img/projects/turbonews/4.webp',
             'img/projects/turbonews/1.jpg',
             'img/projects/turbonews/1.gif',
             'img/projects/turbonews/2.jpg',
@@ -35,6 +36,36 @@ mycatisthebestpreviewtrigger.addEventListener('click', (e) => {
             'img/projects/mycatisthebest/1.gif',
             'img/projects/mycatisthebest/2.jpg',
             'img/projects/mycatisthebest/3.jpg']
+    });
+})
+
+
+ 
+
+
+
+
+// Sellit - Gallery
+const sellitpreviewtrigger = document.querySelector('#sellittrigger');
+sellitpreviewtrigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    SimpleLightbox.open({
+        items: [
+            'img/projects/sellit/1.webp']
+    });
+})
+
+
+// Musicapp - Gallery
+const musicapptrigger = document.querySelector('#musicapptrigger');
+musicapptrigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    SimpleLightbox.open({
+        items: [
+            'img/projects/musicapp/1.webp',
+            'img/projects/musicapp/2.webp',
+            'img/projects/musicapp/3.webp'
+        ]
     });
 })
 
