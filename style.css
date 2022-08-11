@@ -170,8 +170,10 @@ section.projects h3 {
 section.projects h3 {
   position: relative;
   width: fit-content;
+  text-decoration: underline;
 }
 section.projects h3::after {
+  display: none;
   content: '';
   position: absolute;
   /* background-color: blueviolet; */

@@ -71,6 +71,18 @@ musicapptrigger.addEventListener('click', (e) => {
 
 
  
+// Musicapp - Gallery
+const mambospanishtrigger = document.querySelector('#mambospanishtrigger');
+mambospanishtrigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    SimpleLightbox.open({
+        items: [
+            'img/projects/musicapp/1.webp',
+            'img/projects/musicapp/2.webp',
+            'img/projects/musicapp/3.webp'
+        ]
+    });
+})
 
 
 
