@@ -71,9 +71,23 @@ musicapptrigger.addEventListener('click', (e) => {
 
 
  
-// Musicapp - Gallery
+// MamboSpanish - Gallery
 const mambospanishtrigger = document.querySelector('#mambospanishtrigger');
 mambospanishtrigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    SimpleLightbox.open({
+        items: [
+            'img/projects/musicapp/1.webp',
+            'img/projects/musicapp/2.webp',
+            'img/projects/musicapp/3.webp'
+        ]
+    });
+})
+
+
+// New Summit - Gallery
+const newsummittrigger = document.querySelector('#newsummittrigger');
+newsummittrigger.addEventListener('click', (e) => {
     e.preventDefault()
     SimpleLightbox.open({
         items: [
@@ -109,3 +123,4 @@ mambospanishtrigger.addEventListener('click', (e) => {
 
     console.log(scrollpos)
   })
+// Hi! Good to see you here!! :)
