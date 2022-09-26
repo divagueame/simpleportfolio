@@ -40,11 +40,6 @@ mycatisthebestpreviewtrigger.addEventListener('click', (e) => {
 })
 
 
- 
-
-
-
-
 // Sellit - Gallery
 const sellitpreviewtrigger = document.querySelector('#sellittrigger');
 sellitpreviewtrigger.addEventListener('click', (e) => {
@@ -54,7 +49,6 @@ sellitpreviewtrigger.addEventListener('click', (e) => {
             'img/projects/sellit/1.webp']
     });
 })
-
 
 // Musicapp - Gallery
 const musicapptrigger = document.querySelector('#musicapptrigger');
@@ -69,7 +63,6 @@ musicapptrigger.addEventListener('click', (e) => {
     });
 })
 
-
  
 // MamboSpanish - Gallery
 const mambospanishtrigger = document.querySelector('#mambospanishtrigger');
@@ -77,9 +70,7 @@ mambospanishtrigger.addEventListener('click', (e) => {
     e.preventDefault()
     SimpleLightbox.open({
         items: [
-            'img/projects/musicapp/1.webp',
-            'img/projects/musicapp/2.webp',
-            'img/projects/musicapp/3.webp'
+            'img/projects/mambospanish/schema.png'
         ]
     });
 })
@@ -97,15 +88,6 @@ newsummittrigger.addEventListener('click', (e) => {
         ]
     });
 })
-
-
-
-
-
-
-
-
-
 
 // Scroll
   let scrollpos = window.scrollY
