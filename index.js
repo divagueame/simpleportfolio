@@ -1,3 +1,16 @@
+// Hi! Good to see you here!! :)
+// TurboNews Gallery
+const lpImagesTrigger = document.querySelector('#lptrigger');
+lpImagesTrigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    SimpleLightbox.open({
+        items: [
+            'img/projects/lp/1.webp',
+            'img/projects/lp/2.webp']
+    });    
+})
+
+
 // TurboNews Gallery
 const turbonewsImagesTrigger = document.querySelector('#turbonewstrigger');
 turbonewsImagesTrigger.addEventListener('click', (e) => {
@@ -82,9 +95,8 @@ newsummittrigger.addEventListener('click', (e) => {
     e.preventDefault()
     SimpleLightbox.open({
         items: [
-            'img/projects/musicapp/1.webp',
-            'img/projects/musicapp/2.webp',
-            'img/projects/musicapp/3.webp'
+            'img/projects/newsummit/2.gif',
+            'img/projects/newsummit/2.gif'
         ]
     });
 })
@@ -105,4 +117,4 @@ newsummittrigger.addEventListener('click', (e) => {
 
     console.log(scrollpos)
   })
-// Hi! Good to see you here!! :)
+

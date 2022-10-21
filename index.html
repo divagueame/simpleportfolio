@@ -49,7 +49,7 @@
 
       <img
         class="profilepic"
-        src="martin_arce_profile_pic.webp"
+        src="img/profile/martin_arce_profile_pic.webp"
         alt="Martin Arce Profile Picture"
       />
     </header>
@@ -89,6 +89,20 @@
         <li>Actively monitored and improved Core Web Vitals and SEO ratings</li>
         <li>Documentated new implemented features and previous solved bugs.</li>
       </ul>
+       <div class="links">
+          <a class="img-link" href="#" id="lptrigger"
+            ><img
+              class="logo-img"
+              src="img/img.svg"
+              alt="Pictures of"
+            />Screenshots</a
+          >
+          <a class="img-link" href="https://www.labelprint24.com/">
+            <img class="logo-img" src="img/launch.svg" alt="Github Logo" />Live
+            Version</a
+          > 
+        </div>
+      </div>
     </section>
 
     <!-- Projects -->
@@ -100,16 +114,7 @@
       <div class="project">
         <h3>TurboNews</h3>
         <p>
-          TurboNews is an extended and advanced version of one of
-          <!-- 
-          <img
-            id="turbonewspreviewtrigger"
-            class="logo-img"
-            src="img/external.svg"
-            alt="Pictures of"
-          /> -->
-
-          <a href="#" class="fire-link">my first Rails apps</a>: a basic web
+          TurboNews is an extended and advanced version of one of <a href="https://github.com/divagueame/notis" class="fire-link">my first Rails apps</a>: a basic web
           scraper which crawls the newspapers. It automatically gathers the
           headlines every 6 hours and lists the links to the user with the
           articles of the day. TurboNews works as an automated tool to search,
@@ -191,7 +196,7 @@
               alt="Pictures of"
             />Screenshots</a
           >
-          <a class="img-link" href="#">
+          <a class="none img-link" href="#">
             <img class="logo-img" src="img/launch.svg" alt="Github Logo" />Live
             Version</a
           >
@@ -232,7 +237,7 @@
               alt="Pictures of"
             />Screenshots</a
           >
-          <a class="img-link" href="#">
+          <a class="img-link none" href="#">
             <img class="logo-img" src="img/launch.svg" alt="See live" />Live
             Version</a
           >
@@ -265,10 +270,10 @@
         <ul>
           <span>Relevant features:</span>
           <li>
-            DB live update after the user drags and drops to rearrange items
+            DB instant update after the user drags and drops to rearrange items
             using StimulusJS
           </li>
-          <li>Images resize after uploads and is stored in a AWS S3 Bucket</li>
+          <li>Images resizing after upload. Smaller versions are stored in a AWS S3 Bucket</li>
         </ul>
         <div class="links">
           <a class="img-link" href="#" id="mycatisthebesttrigger"
@@ -278,7 +283,7 @@
               alt="Pictures of"
             />Screenshots</a
           >
-          <a class="img-link" href="#">
+          <a class="img-link none" href="#">
             <img class="logo-img" src="img/launch.svg" alt="See live" />Live
             Version</a
           >
@@ -360,7 +365,7 @@
               alt="Pictures of"
             />Screenshots</a
           >
-          <a class="img-link" href="https://www.mambospanish.com/">
+          <a class="img-link none" href="https://www.mambospanish.com/">
             <img class="logo-img" src="img/launch.svg" alt="Github Logo" />Live
             Version</a
           >
@@ -405,7 +410,7 @@
               alt="Pictures of"
             />Screenshots</a
           >
-          <a class="img-link" href="#">
+          <a class="img-link none" href="#">
             <img class="logo-img" src="img/launch.svg" alt="Github Logo" />Live
             Version</a
           >
@@ -418,6 +423,30 @@
           >
         </div>
       </div>
+
+      <!-- Chiki Deploy -->
+      <div class="project">
+        <h3>ChikiDeploy</h3>
+        <p> ChikiDeploy is a CLI script written in <u>Bash</u> to extend the Rails app generator. It allows to use a single command to create a new Rails application on a virtual private server running on Linux Ubuntu. It leverages the power of GitHub CLI and Mina to deploy the code on the server and get it ready for a quick deployment.
+        </p>
+        <ul>
+          <span>Built with:</span>
+          <li>Bash</li>
+          <li>GitHub CLI</li>
+          <li>SSH</li>
+          <li>Mina/Capistrano</li>
+        </ul>
+        <div class="links">
+          <a class="img-link" href="https://github.com/divagueame/chikideploy">
+            <img
+              class="logo-img"
+              src="img/github1.svg"
+              alt="Github Logo"
+            />Source Code</a
+          >
+        </div>
+      </div>
+
 
       <!-- Other Projects -->
       <div class="project">
@@ -481,12 +510,12 @@
         but I have lived in China, Switzerland, Ukraine, France and England and
         traveled some others.
       </p>
-      <p>🐱Cats, 🚲biking and 🍳 cooking are some of my favs.</p>
+      <p>🐱 Cats, 🚲 biking and 🍳 cooking are some of my favs.</p>
     </section>
     <section class="contact">
       <h2>Contact</h2>
       <hr />
-      <a href="https://github.com/divagueame" class="img-link">
+      <a href="mailto:contact@martin-arce.de" class="img-link">
         <img class="logo-img" src="img/mail.svg" alt="Github Logo" />
         contact@martin-arce.de
       </a>
@@ -494,7 +523,7 @@
         <img class="logo-img" src="img/github1.svg" alt="Github Logo" />
         Github
       </a>
-      <a href="#" class="img-link">
+      <a href="#" class="none img-link">
         <img
           class="logo-img"
           src="img/resume.svg"
