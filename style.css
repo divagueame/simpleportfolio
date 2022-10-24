@@ -263,3 +263,11 @@ section h3.light {
 .none {
   display: none !important;
 }
+.mode-toggler {
+  background-color: #ffdb8c;
+  padding: 10px 20px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  border-radius: 12px;
+}
