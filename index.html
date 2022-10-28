@@ -9,7 +9,7 @@
     <meta name="title" content="Martin Arce - Web Developer" />
     <meta
       name="description"
-      content="Martin Arce - Spain-based web developer. I aim at simple, reliable and goal-oriented software. "
+      content="Martin Arce - Web developer. I aim at simple, reliable and goal-oriented software. "
     />
 
     <!-- Open Graph / Facebook -->
@@ -18,7 +18,7 @@
     <meta property="og:title" content="Martin Arce - Web Developer" />
     <meta
       property="og:description"
-      content="Martin Arce - Spain-based web developer. I aim at simple, reliable and goal-oriented software. "
+      content="Martin Arce - Web developer. I aim at simple, reliable and goal-oriented software. "
     />
     <meta property="og:image" content="" />
 
@@ -28,7 +28,7 @@
     <meta property="twitter:title" content="Martin Arce - Web Developer" />
     <meta
       property="twitter:description"
-      content="Martin Arce - Spain-based web developer. I aim at simple, reliable and goal-oriented software. "
+      content="Martin Arce - Web developer. I aim at simple, reliable and goal-oriented software. "
     />
     <meta property="twitter:image" content="" />
 
@@ -36,26 +36,15 @@
     <script src="simpleLightbox.js" defer></script>
     <script src="index.js" defer></script>
     
-    <script type="module">
-      import { Application, Controller } from "./stimulus.js"
-      window.Stimulus = Application.start()
-  
-      Stimulus.register("mode", class extends Controller {
-        static targets = [ "trigger" ]
-        static values = {
-          currentMode: String
-        }
-  
-        connect() {
-          console.log(this.currentModeValue)
-        }
-      })
-    </script>
-
+    <script type="module" src="mode_controller.js"></script> 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="simpleLightbox.css" />
   </head>
   <body data-controller="mode" data-mode-current-mode-value="default">
+    <div class="mode-toggler nones">
+      <div data-mode-target="default" data-action="click->mode#toggle" class="default">Default</div>
+      <div data-mode-target="extended"  data-action="click->mode#toggle" class="extend">Extended</div>
+    </div>
     <!-- <div class="languages">
       <a href="#" class="fire-link active">EN</a
       ><a class="fire-link" href="#">ES</a><a class="fire-link" href="#">DE</a>
@@ -580,9 +569,6 @@
         My resume
       </a>
     </section>
-    <div class="mode-toggler none">
-      <div class="default">Default</div>
-      <div class="extend">Extended</div>
-    </div>
+
   </body>
 </html>
