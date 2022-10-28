@@ -273,6 +273,12 @@ section h3.light {
 }
 .lists {
   display: flex;
-  gap: 15px;
-justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 600px) {
+  .lists {
+    gap: 15px;
+  } 
 }
