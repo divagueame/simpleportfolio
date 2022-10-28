@@ -35,10 +35,27 @@
     <title>Martin Arce - Web Developer</title>
     <script src="simpleLightbox.js" defer></script>
     <script src="index.js" defer></script>
+    
+    <script type="module">
+      import { Application, Controller } from "./stimulus.js"
+      window.Stimulus = Application.start()
+  
+      Stimulus.register("mode", class extends Controller {
+        static targets = [ "trigger" ]
+        static values = {
+          currentMode: String
+        }
+  
+        connect() {
+          console.log(this.currentModeValue)
+        }
+      })
+    </script>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="simpleLightbox.css" />
   </head>
-  <body>
+  <body data-controller="mode" data-mode-current-mode-value="default">
     <!-- <div class="languages">
       <a href="#" class="fire-link active">EN</a
       ><a class="fire-link" href="#">ES</a><a class="fire-link" href="#">DE</a>
@@ -53,6 +70,37 @@
         alt="Martin Arce Profile Picture"
       />
     </header>
+
+
+    <!-- Skills -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <hr />
+      
+      <div class="lists">  
+          <ul>
+            <li>HTML/CSS</li>
+            <li>Figma</li>
+            <li>Hotwire & StimulusJS</li>
+            <li>Vue</li>
+          </ul>
+
+          <ul>
+            <li>Javascript</li>
+            <li><b>Ruby On Rails</b></li>
+            <li>PHP</li>
+            <li>PostgreSQL/MySQL</li>
+            
+          </ul>
+          <ul>
+            <li>Git</li>
+            <li>Linux</li>
+            <li>Heroku & Fly.io</li>
+          </ul>
+
+      </div>
+      </div>
+    </section>
 
     <!-- Work -->
     <section class="work">

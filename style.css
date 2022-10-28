@@ -271,3 +271,8 @@ section h3.light {
   top: 10px;
   border-radius: 12px;
 }
+.lists {
+  display: flex;
+  gap: 15px;
+justify-content: space-between;
+}
